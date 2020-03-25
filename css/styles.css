@@ -106,7 +106,6 @@ font-style: italic;
     background-color: #e8eeef;
     color: #8a97a0;
     box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
-    margin-bottom: 30px;
     border-radius: 8px;
     
     
@@ -131,8 +130,17 @@ font-style: italic;
   textarea {
       height: 150px;
   }
-  
-  
+  .flex {
+    margin-bottom: 30px;
+  }
+  form {
+    
+    margin: 5px auto;
+    padding: 0 20px;
+    background: #f4f7f8;
+    border-radius: 8px;
+
+  }
   
   input[type="radio"],
   input[type="checkbox"] {
@@ -228,27 +236,29 @@ font-style: italic;
         width: 100%;
     }
 
-  input[type="text"],
-   input[type="tel"], 
-   input[type="email"]   {
-      display: inline-block;
-      float:right;
-      width:75%;
+    .flex {
+      display: flex;
       
+      align-items: center;
     }
 
-    .contact-info label {
-     display: inline-block;
-     float:left;
-     width: 25%;
-     
-     }
+    .flex label {
+      width: 45%;
+    }
   
 
      #state {
       display: inline-block;
       float:right;
-      width:75%;
+      
+     }
+     #zipcode{
+    
+       width: 30%;
+     }
+
+     label[for="zipcode"]{
+       width:30%;
      }
   
    form {
