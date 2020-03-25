@@ -22,30 +22,33 @@
         <p class="tagline greytxt">Get the latest news on how your code is doing right in your inbox</p>
 
       </div>
-<div class="contact-info">
+
+      
       <form action="index.html" method="post">
         
-        <h2>Contact Information</h2>
         
-        <fieldset>
-          
-          
+        <fieldset class="contact-info">
+        
+
+        <legend><h2>Contact Information</h2></legend>
+        
           <label for="name" class="greytxt">Full Name</label>
-          <input type="text" id="name" class ="req" name="user_name" placeholder="Required">
-          
+          <input required type="text" id="name" class ="req" name="user_name" placeholder="Required">
+       
+         
           <label for="mail" class="greytxt">Email Address</label>
-          <input type="email" id="mail" class ="req" name="user_email" placeholder="Required">
-
+          <input required type="email" id="mail" class ="req" name="user_email" placeholder="Required">
+       
           <label for="phone" class="greytxt">Phone Number</label>
-          <input type="text" id="phone" name="user_number">
+          <input required type="tel" id="phone" name="user_number" placeholder="Eg. 06-567-123">
+         
+          <label for="address" class="greytxt lefttxt">Street Address</label>
+          <input required type="text" id="address" name="user_address" placeholder="Eg. 59 Drury Lane">
 
-          <label for="address" class="greytxt">Street Address</label>
-          <input type="text" id="address" name="user_address">
+          <label for="city" class="greytxt lefttxt">City</label>
+          <input required type="text" id="city" name="user_city">
 
-          <label for="city" class="greytxt">City</label>
-          <input type="text" id="city" name="user_city">
-
-          <label for="state" class="greytxt">State</label>
+          <label for="state" class="greytxt lefttxt">State</label>
           <select id="state" name="user_state" >
             <option value="Choose State" disabled selected hidden>Choose State</option>
             <optgroup label="North">
@@ -70,16 +73,16 @@
           </select>
             
           
-          <label for="zipcode" class="greytxt">Zip Code</label>
-          <input type="text" id="zipcode" name="user_zipcode">
-
+          <label for="zipcode" class="greytxt leftxt">Zip Code</label>
+          <input required type="text" id="zipcode" name="user_zipcode">
+        
         </fieldset>
 
-      </div>
+      
 
       <div class="newsletter">
         <fieldset>
-          <h2>Newsletter</h2>
+         <legend> <h2>Newsletter</h2></legend>
           
         <div class="greytxt">
           <label>Select the newsletters you would like to recieve</label><br>
@@ -92,19 +95,22 @@
          <input type="radio" id="html-format" value ="html-format" name="newsletter_format"><label for="html-format" class="format space">HTML</label><br>
          <input type="radio" id="text-format" value ="text-format" name="newsletter_format"><label for="text-format" class="format space">Plain text</label><br>
         </div>
-        </fieldset>
+       
         
-       <fieldset>     
+           
            <label for="topics" class="greytxt">Other topics you'd like to hear about</label>
           <textarea id="topics" name="user_topics"></textarea>
-        </fieldset>
+        
 
-        <button type="submit">Sign Up</button>
+          <button type="submit" class="btn">Sign Up</button>
+      </fieldset>
 
       </div>
     
+  
       </form>
     </div>
+    
     
   
       <footer>

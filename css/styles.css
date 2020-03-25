@@ -21,8 +21,8 @@
       font-size: 1.2em;
       padding-bottom: 15px;
       padding-top: 15px;
-      max-width: 90% ;
-      width: 90%;
+      max-width: 100% ;
+      width: 92%;
       margin: auto;
       border-bottom: 4px solid black;
     
@@ -31,14 +31,21 @@
     font-size: 1.2em;
     padding-bottom: 15px;
     padding-top: 15px;
-    max-width: 90% ;
-    width: 90%;
+    max-width: 100% ;
+    width: 100%;
     margin: auto;
     margin-top: 3px;
-    border-bottom: 2px solid black;
-    border-top: 2px solid black;
+    
 
   }
+
+  legend{
+    border-top: 2px solid black;
+    max-width:100%;
+    padding-top: 20px;
+    width: 100%;
+  }
+  h2 {border:none;}
 
   .newsletter{
 
@@ -55,11 +62,12 @@
     color: grey
 }
   form {
-    max-width: 300px;
-    margin: 10px auto;
-    padding: 10px 20px;
+    
+    margin: 5px auto;
+    padding: 0 20px;
     background: #f4f7f8;
     border-radius: 8px;
+
   }
   
   h1 {
@@ -100,13 +108,31 @@ font-style: italic;
     box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
     margin-bottom: 30px;
     border-radius: 8px;
+    
+    
   }
+
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="number"]:focus,
+  input[type="tel"]:focus,
+  textarea:focus,
+  select:focus
+  {
+    transition: 1s ease-in;
+    opacity: .6;
+    background-color: mediumspringgreen;
+
+  }
+
   #zipcode {
       width:50%;
   }
   textarea {
       height: 150px;
   }
+  
+  
   
   input[type="radio"],
   input[type="checkbox"] {
@@ -141,6 +167,11 @@ font-style: italic;
     border-width: 1px 1px 3px;
     box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
     margin-bottom: 10px;
+    opacity: 1;
+  }
+   
+   button:hover {
+    opacity: 0.75;
   }
   
   fieldset {
@@ -179,8 +210,8 @@ font-style: italic;
     border-radius: 100%;
   }
 
-  .req {
-    font-size: 10px;
+  input::placeholder{
+    font-size: 15px;
     font-style: italic;
     text-align: right;
     padding-right: 10px;
@@ -197,6 +228,29 @@ font-style: italic;
         width: 100%;
     }
 
+  input[type="text"],
+   input[type="tel"], 
+   input[type="email"]   {
+      display: inline-block;
+      float:right;
+      width:75%;
+      
+    }
+
+    .contact-info label {
+     display: inline-block;
+     float:left;
+     width: 25%;
+     
+     }
+  
+
+     #state {
+      display: inline-block;
+      float:right;
+      width:75%;
+     }
+  
    form {
        max-width: none;
    }
